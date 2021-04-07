@@ -1,0 +1,187 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет акцента #2196F3 */
+/* белый #FFFFFF */
+/* вторичный фон #F5F4FA */
+
+/* Переменные */
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --main-font: Roboto;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+}
+
+/* Лого */
+
+.logo-header {
+  color: var(--main-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Навигация сайта */
+
+.list {
+  list-style: none;
+}
+.link {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.contacts .link {
+  color: var(--second-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* кнопка => Заказать */
+
+.hero-container {
+  width: auto;
+  height: 600px;
+
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*  Кнопка */
+.hero-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: var(--white);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* Main */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Особенности */
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-text {
+  width: 270px;
+
+  color: var(--second-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Команда */
+
+.workers-container {
+  width: auto;
+  height: auto;
+
+  background-color: #f5f4fa;
+}
+.worker-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.worker-text {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+
+.address-container {
+  width: auto;
+  height: 252px;
+
+  background-color: #2f303a;
+}
+.logo-footer {
+  color: var(--white);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-address {
+  color: var(--white);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
