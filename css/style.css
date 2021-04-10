@@ -4,6 +4,8 @@
   --alt-text-clr: #757575;
   --accent-clr: #2196f3;
   --white-text: #ffffff;
+  --black-text: #000000;
+  --address-clr: rgba(255, 255, 255, 0.6);
 
   --main-bgr: #ffffff;
   --dark-bgr: #2f303a;
@@ -21,7 +23,7 @@ body {
 }
 
 .link {
-  color: inherit;
+  color: var(--main-text-clr);
   text-decoration: none;
 }
 .link:hover,
@@ -35,7 +37,7 @@ body {
 /* Лого */
 
 .logo {
-  color: #000000;
+  color: var(--black-text);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -60,10 +62,10 @@ body {
 /* Контакты header/footer */
 
 .contacts {
-  color: #757575;
+  color: var(--alt-text-clr);
 }
 .contacts-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-clr);
 }
 
 /* Главный заголовок */
@@ -106,7 +108,7 @@ body {
 /* Особенности */
 
 .feature-title {
-  font-size: inherit;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -127,7 +129,8 @@ body {
   letter-spacing: 0.03em;
 }
 .position {
-  font-weight: inherit;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--alt-text-clr);
 }
@@ -135,7 +138,7 @@ body {
 /* Подвал */
 
 .address {
-  font-style: inherit;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text);
@@ -153,7 +156,7 @@ body {
 /* Portfolio страница */
 
 .filter-btn {
-  color: inherit;
+  color: var(--main-text-clr);
   background-color: var(--alt-bgr);
   font-family: inherit;
   font-weight: 500;
